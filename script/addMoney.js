@@ -4,11 +4,14 @@ document.getElementById("add-money").addEventListener("click", function (event) 
     const convertedAmount = parseFloat(amount);
     const pin = document.getElementById("Pin").value;
     const convertedPin = parseInt(pin);
-    const mainBalance = document.getElementById("main-blance").innerText;
+    const mainBalance = document.getElementById("main-balance").innerText;
     const convertedMainBalance = parseFloat(mainBalance);
 
     if (convertedPin === 1234) {
         const sum = convertedMainBalance + convertedAmount;
-        document.getElementById("main-blance").innerText = sum;
+        document.getElementById("main-balance").innerText = sum;
+    }
+    else{
+        alert("Incorrect Pin");
     }
 })
