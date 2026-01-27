@@ -1,6 +1,6 @@
 document.getElementById("add-money").addEventListener("click", function (event) {
     event.preventDefault();
-    const amount = document.getElementById("amount").value;
+    const amount = document.getElementById("Amount").value;
     const convertedAmount = parseFloat(amount);
     const pin = document.getElementById("Pin").value;
     const convertedPin = parseInt(pin);
