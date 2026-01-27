@@ -7,9 +7,8 @@ document.getElementById("add-money").addEventListener("click", function (event) 
     const mainBalance = document.getElementById("main-blance").innerText;
     const convertedMainBalance = parseFloat(mainBalance);
 
-    if(convertedPin ===1234){
+    if (convertedPin === 1234) {
         const sum = convertedMainBalance + convertedAmount;
-        document.getElementById("main-blance").innerText=sum ;
+        document.getElementById("main-blance").innerText = sum;
     }
-    
 })
