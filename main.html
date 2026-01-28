@@ -37,33 +37,33 @@
                 is
                 low and fast</p>
             <div class="cards mt-10 grid grid-cols-3 gap-4">
-                <div
+                <div id="Add-Money-box"
                     class="cursor-pointer bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
                     <img class="w-8 mx-auto" src="assets/wallet1.png" alt="" srcset="">
                     <p class="text-center">Add Money</p>
                 </div>
-                <div class=" bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
+                <div id="Cash-out-box" class="cursor-pointer bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
                     <img class="w-8 mx-auto" src="assets/send1.png" alt="" srcset="">
                     <p class="text-center">Cashout</p>
                 </div>
-                <div class=" bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
+                <div class="cursor-pointer bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
                     <img class="w-8 mx-auto" src="assets/money1.png" alt="" srcset="">
                     <p class="text-center">Transfer Money</p>
                 </div>
-                <div class=" bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
+                <div class="cursor-pointer bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
                     <img class="w-8 mx-auto" src="assets/bonus1.png" alt="" srcset="">
                     <p class="text-center">Get Bonus</p>
                 </div>
-                <div class=" bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
+                <div class="cursor-pointer bg-white p-4 text-xs rounded-lg items-center justify-center border border-[#ffde97]">
                     <img class="w-8 mx-auto" src="assets/purse1.png" alt="" srcset="">
                     <p class="text-center">Pay Bill</p>
                 </div>
-                <div class="bg-white p-4 text-xs rounded-lg border border-[#ffde97]">
+                <div class="cursor-pointer bg-white p-4 text-xs rounded-lg border border-[#ffde97]">
                     <img class="w-8 mx-auto" src="assets/transaction1.png" alt="" srcset="">
                     <p class="text-center">Transactions</p>
                 </div>
             </div>
-            <div>
+            <section id="Add-Money">
                 <h2 class="mt-8 font-bold text-2xl text-blue-700">Add Money</h2>
                 <div class="">
                     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -82,21 +82,47 @@
                                     <input value="01403320673" id="Account-Number" type="Account Number" class="input"
                                         placeholder="Account Number" required />
                                     <label class="label">Your Amount</label>
-                                    <input id="Amount" type="Number" class="input"
-                                        placeholder="Your Amount" required />
+                                    <input id="Amount" type="Number" class="input" placeholder="Your Amount" required />
                                     <label class="label">Pin</label>
                                     <input value="1234" id="Pin" type="Pin" class="input" placeholder="Pin" required />
                                     <div><a class="link link-hover">Forgot Pin?</a></div>
-                                    <button id="add-money" class="btn bg-blue-700 border-none btn-neutral mt-4">Add Money</button>
+                                    <button id="add-money" class="btn bg-blue-700 border-none btn-neutral mt-4">Add
+                                        Money</button>
                                 </fieldset>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section id="Cashout">
+                <div>
+                    <h2 class="mt-8 font-bold text-2xl text-blue-700">Cash out</h2>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+
+                        <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Account Number</label>
+                                    <input value="01403320673" id="Account-Number" type="Account Number" class="input"
+                                        placeholder="Account Number" required />
+                                    <label class="label">Your Amount</label>
+                                    <input id="Amount" type="Number" class="input" placeholder="Your Amount" required />
+                                    <label class="label">Pin</label>
+                                    <input value="1234" id="Pin" type="Pin" class="input" placeholder="Pin" required />
+                                    <div><a class="link link-hover">Forgot Pin?</a></div>
+                                    <button id="add-money" class="btn bg-blue-700 border-none btn-neutral mt-4">Add
+                                        Money</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
     </section>
     <script src="script/addMoney.js"></script>
+    <script src="script/toggol.js"></script>
 
 </body>
 
